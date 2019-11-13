@@ -63,6 +63,12 @@
 			<artifactId>springfox-swagger-ui</artifactId>
 			<version>2.9.2</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.sonarsource.scanner.maven/sonar-maven-plugin -->
+		<dependency>
+    			<groupId>org.sonarsource.scanner.maven</groupId>
+    			<artifactId>sonar-maven-plugin</artifactId>
+    			<version>3.7.0.1746</version>
+		</dependency>
 	</dependencies>
 	<distributionManagement>
   <snapshotRepository>
@@ -82,11 +88,11 @@
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.21.0</version>
 			</plugin>
-		<!--	<plugin>
-    <groupId>org.codehaus.mojo</groupId>
-    <artifactId>sonar-maven-plugin</artifactId>
-    <version>3.6.0</version> 
-</plugin> -->
+		<plugin>
+    		<groupId>org.sonarsource.scanner.maven</groupId>
+    		<artifactId>sonar-maven-plugin</artifactId>
+   		 <version>3.7.0.1746</version> 
+		</plugin>
 
 			<plugin>
 				<groupId>org.jacoco</groupId>
